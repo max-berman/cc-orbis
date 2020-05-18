@@ -18,7 +18,6 @@
     "server": "node-env-run server --exec nodemon | pino-colada",
     "start": "react-scripts start",
     "dev": "rm -rf .env && touch .env && run-p server start",
-    "heroku-postbuild": "ng build --prod",
     "build": "cp .env.example .env && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
