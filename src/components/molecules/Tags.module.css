@@ -1,0 +1,36 @@
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: calc(var(--spacer) / 2) 0;
+}
+.tag {
+  font-size: var(--font-size-small);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
+  background-color: var(--brand-blue);
+  margin-left: calc(var(--spacer) / 4);
+  padding-left: calc(var(--spacer) / 8);
+  color: var(--brand-grey-dark);
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+}
+.tags li:first-child {
+  margin-left: 0;
+}
+.tag button {
+  border: none;
+  font-size: var(--font-size-large);
+  background: inherit;
+  padding: 0;
+  margin: 0 calc(var(--spacer) / 8);
+  display: block;
+  cursor: pointer;
+  outline: none;
+}
+
+.tag button:hover {
+  color: var(--brand-grey);
+}
