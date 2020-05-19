@@ -29,6 +29,7 @@ npm start
 - Due to time constrains unit testing has been omitted.
 - Components are broken up based on atomic design metholody.
 - No External UI library has been leveraged instead CSS Modules mixed with global CSS variables did the job.
+- Autocomlete drop down - ideally the autocomplete data should be fetched from an external API but for this task, json data collected online is used.
 
 ### Room for improvements
 
@@ -36,4 +37,4 @@ npm start
 - Twits refresh could be optimized to be less resource intencive
 - Error handling via UI, currently it's done via console logging
 - Notification regarding the limited rate from stocktwits API
-- Unit Test
+- Unit Testing

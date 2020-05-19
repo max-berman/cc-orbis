@@ -5,7 +5,7 @@ import Button from '../atoms/Button'
 import TextField from '../atoms/TextField'
 import StreamContext from '../../contexts/StreamContext'
 import Tags from '../molecules/Tags'
-// Ideally the Autocomplete complete data should be fetched from an API
+// Ideally the autocomplete  data should be fetched from an API
 // for this task I had to use converted from csv to json data collected online
 import { TICKERS } from '../../data/tickers'
 import DropDownList from './DropDownList'
