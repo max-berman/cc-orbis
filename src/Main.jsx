@@ -22,7 +22,7 @@ function Main({ children, title }) {
       .then(({ symbol: { symbol }, messages, response: { status } }) => {
         if (status === 200) {
           const newStream = transformStream(messages, symbol)
-          setTwits((prevState) => uniqBy([...prevState, ...newStream], 'id'))
+          setTwits((prevState) => uniqBy([...newStream, ...prevState], 'id'))
         } else {
           throw Error(status)
         }
