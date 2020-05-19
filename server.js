@@ -7,7 +7,7 @@ const serveStatic = require('serve-static')
 
 const app = express()
 
-const port = process.env.PORT || '4000'
+const port = process.env.PORT || 4000
 const apiUrl = 'https://api.stocktwits.com/api/2/streams/symbol/'
 
 app.use(favicon(__dirname + '/build/favicon.ico'))
