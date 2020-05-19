@@ -22,7 +22,6 @@ function Main({ children, title }) {
       .then(({ symbol: { symbol }, messages, response: { status } }) => {
         if (status === 200) {
           const newStream = transformStream(messages, symbol)
-          //console.log(uniqueById(newStream))
           setTwits((prevState) => uniqBy([...prevState, ...newStream], 'id'))
         } else {
           throw Error(status)

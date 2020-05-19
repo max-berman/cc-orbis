@@ -3,8 +3,8 @@ import styles from './Tags.module.css'
 
 function Tags({ tags, setTags, setTwits, twits }) {
   useEffect(() => {
+    // console.log(twits.length)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    console.log(twits.length)
   }, [twits])
 
   function handleClose(tag, e) {
