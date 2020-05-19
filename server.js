@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
 const rp = require('request-promise')
+const serveStatic = require('serve-static')
 
 const app = express()
 const port = process.env.PORT || '4000'
@@ -33,7 +34,8 @@ app.post('/api', (req, res) => {
 // Serve static files from build folder
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
-  app.use(express.static(path.join(__dirname, '../build')))
+  //app.use(express.static(path.join(__dirname, '../build')))
+  app.use(serveStatic(path.join(__dirname, 'build')))
 }
 
 app.listen(port, () => console.log(`Server listening http://localhost:${port}`))
