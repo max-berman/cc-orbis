@@ -24,7 +24,7 @@
   "scripts": {
     "server": "node-env-run server --exec nodemon | pino-colada",
     "start-local": "react-scripts start",
-    "start": "PORT=5000 NODE_ENV=production node server/index.js",
+    "start": "PORT=5000 NODE_ENV=production node server/heroku.js",
     "dev": "rm -rf .env && touch .env && run-p server start-local",
     "build": "react-scripts build",
     "test": "react-scripts test",
