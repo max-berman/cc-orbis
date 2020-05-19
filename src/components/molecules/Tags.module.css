@@ -16,6 +16,20 @@
   color: var(--brand-grey-dark);
   border-radius: var(--border-radius);
   text-transform: uppercase;
+  position: relative;
+}
+.tag i {
+  border-radius: 50%;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--brand-grey-light);
+  font-style: normal;
+  font-size: var(--font-size-mini);
+  text-align: center;
+  top: -0.5rem;
+  left: -0.5rem;
+  position: absolute;
 }
 .tags li:first-child {
   margin-left: 0;
@@ -32,5 +46,5 @@
 }
 
 .tag button:hover {
-  color: var(--brand-grey);
+  color: var(--brand-grey-light);
 }

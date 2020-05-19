@@ -9,9 +9,6 @@ export const cleanBody = (val) => {
   }
 }
 
-export const uniqueBy = (a) =>
-  [...new Set(a.map((o) => JSON.stringify(o)))].map((s) => JSON.parse(s))
-
 // transform published twit's time to readable string - by date, hour or min
 export const parseTime = (t) => {
   const time = new Date(t)
@@ -78,23 +75,4 @@ export const handleErrors = (response) => {
     throw Error(response.statusText)
   }
   return response.json()
-}
-
-// Get and Set data based on the searched symbol
-export function fetchData(symbol, setStream) {
-  fetch(`/api`, {
-    method: 'post',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ symbol }),
-  })
-    .then(handleErrors)
-    .then(({ symbol: { symbol }, messages, response: { status } }) => {
-      if (status === 200) {
-        const newStream = transformStream(messages, symbol)
-        setStream((prevState) => uniqueBy([...newStream, ...prevState]))
-      } else {
-        throw Error(status)
-      }
-    })
-    .catch(catchErrors)
 }

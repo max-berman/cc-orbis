@@ -1,5 +1,6 @@
 .form {
   margin-bottom: var(--spacer);
+  position: relative;
 }
 
 .input {

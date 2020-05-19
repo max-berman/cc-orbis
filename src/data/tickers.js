@@ -634,6 +634,10 @@ export const TICKERS = [
     name: 'Amber Road, Inc. Common Stock',
   },
   {
+    symbol: 'AMZN',
+    name: 'Amazon.com, Inc.',
+  },
+  {
     symbol: 'AMC',
     name: 'AMC Entertainment Holdings, Inc. Class A Common Stock',
   },
@@ -9130,6 +9134,10 @@ export const TICKERS = [
   {
     symbol: 'NUW',
     name: 'Nuveen AMT',
+  },
+  {
+    symbol: 'NVDA',
+    name: 'Nvidia Corp.',
   },
   {
     symbol: 'NVGS',

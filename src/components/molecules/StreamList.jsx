@@ -22,7 +22,7 @@ function Stream() {
             image_src,
             link_title,
             twitter_user_url,
-            created_at_original,
+            created_at_original, //TODO: sort by published time
           }) => {
             const bgThumbStyle = { backgroundImage: `url(${avatar_url})` }
             return (
