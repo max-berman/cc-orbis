@@ -15,7 +15,11 @@
     "request-promise": "^4.2.5",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "express-pino-logger": "^5.0.0"
+    "express-pino-logger": "^5.0.0",
+    "node-env-run": "^3.0.2",
+    "nodemon": "^2.0.3",
+    "npm-run-all": "^4.1.5",
+    "pino-colada": "^1.6.1"
   },
   "scripts": {
     "server": "node-env-run server --exec nodemon | pino-colada",
@@ -41,11 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "node-env-run": "^3.0.2",
-    "nodemon": "^2.0.3",
-    "npm-run-all": "^4.1.5",
-    "pino-colada": "^1.6.1"
   }
 }
