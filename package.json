@@ -1,7 +1,6 @@
 {
   "name": "code-challenge-orbis",
   "version": "0.1.0",
-  "private": true,
   "engines": {
     "node": "12.13.x"
   },
@@ -19,8 +18,7 @@
     "start-local": "react-scripts start",
     "start": "run-p server",
     "dev": "rm -rf .env && touch .env && run-p server start-local",
-    "heroku-postbuild": "npm run server",
-    "build": "cp .env.example .env && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
