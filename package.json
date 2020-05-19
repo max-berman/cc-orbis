@@ -16,8 +16,9 @@
   },
   "scripts": {
     "server": "node-env-run server --exec nodemon | pino-colada",
-    "start": "react-scripts start",
-    "dev": "rm -rf .env && touch .env && run-p server start",
+    "start-local": "react-scripts start",
+    "start": "run-p server",
+    "dev": "rm -rf .env && touch .env && run-p server start-local",
     "heroku-postbuild": "npm run server",
     "build": "cp .env.example .env && react-scripts build",
     "test": "react-scripts test",
